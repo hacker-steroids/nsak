@@ -91,7 +91,8 @@ def sniff(args):
 def get_args():
     parser = argparse.ArgumentParser()
     function = parser.add_mutually_exclusive_group
-    function.add_argument('--spoof', '-s', action='store_true', help='perform ARP spoof')
+    function.add_argument('--spoof', '-as', action='store_true', help='perform ARP spoof')
+    function.add_argument('--sniff', '-S', action='store_true', help='perform packet sniffing')
     function.add_argument('-OS', action='store_true', help='perform OS fingerprinting')
     parser.add_argument('--interface', '-i', help='interface')
     parser.add_argument('--target', '-t', help='Victim IP')
@@ -103,7 +104,7 @@ def main():
 
     if args.spoof:
         mitm(args)
-    elif args.OS:
+    elif args.sniff:
         sniff(args)
     else:
         print("Invalid arguments")

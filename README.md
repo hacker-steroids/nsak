@@ -12,6 +12,17 @@ Check project status [here](#Project-Development)
 - other passive or active attacks
 - other MiTM attacks
 
+## Usages:
+To perform ARP spoofing:
+```
+$ python nsak.py -as -i <interface> -t <target IP> -g <router IP>
+```
+To perform packet sniffing:
+```
+$ python nsak.py -S -i <interface>
+```
+
+
 ## Project Development:
 ### Accomplished:
 - ARP spoofing
