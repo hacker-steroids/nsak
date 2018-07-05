@@ -1,7 +1,7 @@
 # Network Swiss Army Knife - nsak
 An all-in-one tool that has the ability to perform network scanning, man in the middle attacks, operations on packets, OS fingerprinting and other network based attacks. The tool is written in Python and utilizes Scapy and nmap modules.
 
-Check project status [here](#Project-Development)
+Check project status [here](#project-development)
 
 ## Functionality
 - packet sniffing
